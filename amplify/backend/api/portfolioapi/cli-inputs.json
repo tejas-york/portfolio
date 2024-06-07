@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/info": {
+      "name": "/info",
+      "lambdaFunction": "infoLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

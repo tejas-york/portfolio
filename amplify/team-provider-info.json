@@ -17,6 +17,9 @@
           "appId": "di6b9fx9hboxk",
           "type": "cicd"
         }
+      },
+      "function": {
+        "infoLambda": {}
       }
     }
   }
