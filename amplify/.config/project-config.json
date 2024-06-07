@@ -7,8 +7,8 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "dist",
-      "BuildCommand": "echo 'No build required'",
-      "StartCommand": "echo 'No start required'"
+      "BuildCommand": "echo \"No build command needed!\"",
+      "StartCommand": "echo \"No start command needed!\""
     }
   },
   "providers": [

@@ -1,9 +1,16 @@
 {
   "version": 1,
   "paths": {
-    "/user-info": {
-      "name": "/user-info",
-      "lambdaFunction": "userInfoHandler",
+    "/info": {
+      "name": "/info",
+      "lambdaFunction": "porfolioLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/projects": {
+      "name": "/projects",
+      "lambdaFunction": "projectsLambda",
       "permissions": {
         "setting": "open"
       }

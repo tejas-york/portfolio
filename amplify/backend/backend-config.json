@@ -8,7 +8,15 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "userInfoHandler"
+          "resourceName": "porfolioLambda"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "projectsLambda"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,7 +24,12 @@
     }
   },
   "function": {
-    "userInfoHandler": {
+    "porfolioLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "projectsLambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -24,28 +37,12 @@
   },
   "hosting": {
     "amplifyhosting": {
-      "providerPlugin": "awscloudformation",
+      "lastPushTimeStamp": "2024-06-07T09:24:43.936Z",
       "service": "amplifyhosting",
-      "type": "manual"
+      "type": "cicd"
     }
   },
   "parameters": {
-    "AMPLIFY_function_userInfoHandler_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "userInfoHandler"
-        }
-      ]
-    },
-    "AMPLIFY_function_userInfoHandler_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "userInfoHandler"
-        }
-      ]
-    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
