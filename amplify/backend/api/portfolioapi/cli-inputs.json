@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/user-info": {
+      "name": "/user-info",
+      "lambdaFunction": "userInfoHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
