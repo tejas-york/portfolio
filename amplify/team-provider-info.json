@@ -13,14 +13,23 @@
     },
     "categories": {
       "function": {
-        "porfolioLambda": {},
-        "projectsLambda": {}
+        "porfolioLambda": {
+          "deploymentBucketName": "amplify-portfolio-dev-89171-deployment",
+          "s3Key": "amplify-builds/porfolioLambda-533237456a6945626430-build.zip"
+        },
+        "projectsLambda": {
+          "deploymentBucketName": "amplify-portfolio-dev-89171-deployment",
+          "s3Key": "amplify-builds/projectsLambda-48695761676e31503273-build.zip"
+        }
       },
       "hosting": {
         "amplifyhosting": {
           "appId": "d30ufnb7gplrr7",
           "type": "cicd"
         }
+      },
+      "api": {
+        "portfolioapi": {}
       }
     }
   }

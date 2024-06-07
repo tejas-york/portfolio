@@ -43,6 +43,38 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_porfolioLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "porfolioLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_porfolioLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "porfolioLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_projectsLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "projectsLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_projectsLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "projectsLambda"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
