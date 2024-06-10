@@ -1,0 +1,14 @@
+{
+  "resourceName": "portfolio",
+  "tableName": "metadata",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "updatedAt",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/meta-data": {
+      "name": "/meta-data",
+      "lambdaFunction": "metaData",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

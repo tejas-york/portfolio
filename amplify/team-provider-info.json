@@ -22,7 +22,8 @@
         "infoLambda": {
           "deploymentBucketName": "amplify-portfolio-dev-fc393-deployment",
           "s3Key": "amplify-builds/infoLambda-59673562395064745652-build.zip"
-        }
+        },
+        "metaData": {}
       },
       "api": {
         "portfolioapi": {}
