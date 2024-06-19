@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-amplify/4.3.6/aws-amplify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aws-amplify@6.3.6/dist/cjs/index.min.js"></script>
     <title>Developer Portfolio</title>
     <style>
       body {
@@ -72,6 +72,24 @@
       </nav>
     </header>
 
+    <form id="loginForm">
+      <section>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          required
+        /><br /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        /><br /><br />
+        <button type="submit">Login</button>
+      </section>
+    </form>
+
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -118,7 +136,7 @@
           });
         });
       });
-
+      console.log(Amplify);
       fetch("https://a3dvvs45p6.execute-api.us-east-1.amazonaws.com/dev/users")
         .then((response) => {
           return response.json();
@@ -130,6 +148,6 @@
           console.log("fetch  err:", err);
         });
     </script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>

@@ -28,6 +28,9 @@
       },
       "api": {
         "portfolioapi": {}
+      },
+      "auth": {
+        "portfolio829dc2b2": {}
       }
     }
   }
