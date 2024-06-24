@@ -12,11 +12,7 @@ const awsServerlessExpressMiddleware = require("aws-serverless-express/middlewar
 
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const {
-  DeleteCommand,
   DynamoDBDocumentClient,
-  GetCommand,
-  PutCommand,
-  QueryCommand,
   ScanCommand,
 } = require("@aws-sdk/lib-dynamodb");
 
