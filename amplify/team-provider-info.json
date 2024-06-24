@@ -25,7 +25,8 @@
         },
         "metaData": {},
         "usersLambda": {},
-        "webhookEventsLambda": {}
+        "webhookEventsLambda": {},
+        "webhooksLambda": {}
       },
       "api": {
         "portfolioapi": {}

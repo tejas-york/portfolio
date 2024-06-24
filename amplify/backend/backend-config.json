@@ -36,7 +36,7 @@
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
     },
-    "webhookEvents": {
+    "webhookApi": {
       "dependsOn": [
         {
           "attributes": [
@@ -44,7 +44,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "webhookEventsLambda"
+          "resourceName": "webhooksLambda"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -111,6 +111,25 @@
       "service": "Lambda"
     },
     "webhookEventsLambda": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "webhookEventsLog"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "webhooksLambda": {
       "build": true,
       "dependsOn": [
         {
