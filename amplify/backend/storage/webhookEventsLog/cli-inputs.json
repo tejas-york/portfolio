@@ -1,0 +1,14 @@
+{
+  "resourceName": "webhookEventsLog",
+  "tableName": "webhookEventsLog",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "timestamp",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
